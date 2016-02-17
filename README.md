@@ -14,6 +14,7 @@ Module Input Variables
 - `azs` - comma separated lists of AZs in which to distribute subnets
 - `enable_dns_hostnames` - should be true if you want to use private DNS within the VPC
 - `enable_dns_support` - should be true if you want to use private DNS within the VPC
+- `provider_alias` - set the alias of the provider to use
 
 It's generally preferable to keep `public_subnets`, `private_subnets`, and
 `azs` to lists of the same length.
@@ -32,6 +33,8 @@ module "vpc" {
   public_subnets  = "10.0.101.0/24,10.0.102.0/24,10.0.103.0/24"
 
   azs      = "us-west-2a,us-west-2b,us-west-2c"
+
+  provider_alias = "my_provider_alias"
 }
 ```
 
