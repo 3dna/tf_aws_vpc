@@ -11,6 +11,5 @@ variable "enable_dns_support" {
   description = "should be true if you want to use private DNS within the VPC"
   default = false
 }
-variable "provider_alias" {
-  description = "set the alias of the provider to use"
-}
+variable "region" {}
+variable "aws_profile" {}
