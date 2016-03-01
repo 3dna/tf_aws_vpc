@@ -17,3 +17,7 @@ output "public_route_table_id" {
 output "private_route_table_id" {
   value = "${aws_route_table.private.id}"
 }
+
+output "default_nework_acl_id" {
+  value = "${aws_vpc.default_network_acl_id}"
+}
