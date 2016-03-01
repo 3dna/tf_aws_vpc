@@ -19,5 +19,5 @@ output "private_route_table_id" {
 }
 
 output "default_nework_acl_id" {
-  value = "${aws_vpc.default_network_acl_id}"
+  value = "${aws_vpc.mod.default_network_acl_id}"
 }
